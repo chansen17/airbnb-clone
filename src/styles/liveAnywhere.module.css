@@ -1,0 +1,42 @@
+.liveAnywhereLayout {
+    min-height: 40vh;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media screen and (min-width: 790px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.category {
+    max-width: 390px;
+}
+
+.title {
+    font-size: 1.15rem;
+    text-align: left;
+    margin: .20rem 0;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}

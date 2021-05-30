@@ -1,0 +1,120 @@
+.banner {
+    min-height: 57vh;
+    height: 100%;
+    margin-top: 2rem;
+    background-image: url('https://a0.muscache.com/im/pictures/2595054e-d1d9-4fde-8046-58d51fcb3164.jpg?im_w=1680');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 500px;
+}
+
+.inner {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #eee;
+}
+
+@media screen and (min-width: 690px) {
+    .inner {
+        top: 30%;
+        left: 30%;
+        transform: translate(-50%);
+        max-width: 250px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .inner {
+        top: 15%;
+        left: 25%;
+        transform: translate(-50%);
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .inner {
+        top: 20%;
+        left: 20%;
+        transform: translate(-50%);
+        max-width: 400px;
+    }
+}
+
+.mainTitle {
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width: 690px) {
+    .mainTitle {
+        font-size: 2.25rem;
+    }   
+}
+
+@media screen and (min-width: 960px) {
+    .mainTitle {
+        font-size: 3.25rem;
+    }
+}
+
+.subTitle {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: .25rem 0;
+}
+
+@media screen and (min-width: 690px) {
+    .subTitle {
+        font-size: 1.25rem;
+        margin: .5rem 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .subTitle {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+    }
+}
+
+.button {
+    border: none;
+    outline: none;
+    background: #eee;
+    color: #131313;
+    border-radius: 8px;
+    padding: .7rem;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 690px) {
+    .button {
+        margin: 0;
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .button {
+        margin: 0;
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .button {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+}

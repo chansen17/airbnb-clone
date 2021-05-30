@@ -1,0 +1,19 @@
+.exploreNearbyHighlightLayout {
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 90px;
+    display: flex;
+}
+
+.featuredHighlights {
+    width: 40%;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+.map {
+    min-height: 100vh;
+    width: 60%;
+    background: #eee;
+}
