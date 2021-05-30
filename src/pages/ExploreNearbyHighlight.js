@@ -60,14 +60,14 @@ const ExploreNearbyHighlight = () => {
                 <div>
                     {
                         allNearbyPlaces.map(p => (
-                            <div className={ExploreNearbyHighlightStyles.featuredItem}>
+                            <div className={ExploreNearbyHighlightStyles.featuredItem} key={p.name}>
                                 <div>
                                     <span className={ExploreNearbyHighlightStyles.superhost}>SUPERHOST</span>
                                     <img className={ExploreNearbyHighlightStyles.featuredImg} src={p.img} />
                                 </div>
                                 <div>
                                     <h3>{p.name}</h3>
-                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing.</h4>
                                     <br/>
                                     <div>
                                         <small>4 guests</small>
@@ -83,7 +83,7 @@ const ExploreNearbyHighlight = () => {
                                     </div>
                                     <div>
                                         <div>
-                                            <span><i class="fas fa-star"></i> 5.0 (3 reviews )</span>
+                                            <span><i className="fas fa-star"></i> 5.0 (3 reviews )</span>
                                         </div>
                                         <div>$110 / night</div>
                                     </div>
@@ -94,7 +94,7 @@ const ExploreNearbyHighlight = () => {
                 </div>
             </div>
             <div className={ExploreNearbyHighlightStyles.map}>
-                <ReactMapGL 
+            <ReactMapGL 
                     width="100%"
                     {...viewport}
                     mapboxApiAccessToken={process.env.REACT_APP_MAP_TOKEN}

@@ -6,22 +6,41 @@
 }
 
 .featuredHighlights {
-    width: 40%;
+    width: 100%;
     min-height: 100vh;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+    .featuredHighlights {
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        max-width: 100%;
+        width: 40%;
+        margin-left: 2rem;
+    }
+}
+
 .map {
-    min-height: 100vh;
-    width: 60%;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .map {
+        display: block;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        width: 50vw;
+    }
 }
 
 .selectedHighlight {
-    /*  */
+    /* styles */
 }
 
 .button {
@@ -41,10 +60,22 @@
 
 .featuredItem {
     display: flex;
+    flex-direction: column;
     position: relative;
     margin: 3rem 0;
     border-bottom: 1px solid #eee;
     padding: 1rem 0;
+}
+
+@media screen and (min-width: 960px) {
+    .featuredItem {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 3rem 0;
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+    }
 }
 
 .superhost {
