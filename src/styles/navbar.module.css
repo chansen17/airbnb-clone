@@ -5,11 +5,27 @@
     right: 0;
     height: 90px;
     background: linear-gradient(to bottom, #13131338, #13131300);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
     align-items: center;
     text-align: center;
     z-index: 1;
+}
+
+.navbarItem:nth-child(2) {
+    display: none !important;
+}
+
+@media screen and (min-width: 1080px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbarItem:nth-child(2) {
+        display: block !important;
+    }
 }
 
 .navbarLogo {
@@ -21,11 +37,39 @@
 .navbarItem {
     font-size: 1.10rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+
 
 .navbarLink {
     text-decoration: none;
     color: #FFF;
     margin: 0 1rem;
     text-transform: capitalize;
+}
+
+.navbarLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75px;
+    background: #eee;
+    border-radius: 20px;
+    padding: .25rem .5rem;
+}
+
+.bars {
+    color: #333;
+}
+
+.loginIcon {
+    background: #777;
+    height: 30px;
+    width: 30px;
+    padding: .15rem;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
 }

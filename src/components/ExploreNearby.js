@@ -63,7 +63,7 @@ const ExploreNearby = () => {
                                 </div>
                                 <div className={ExploreNearbyStyles.destinationText}>
                                     <h5 style={{marginBottom: ".25rem"}}>{p.name}</h5>
-                                    <p style={{fontWeight: "200"}}>{p.distance}</p>
+                                    <p style={{fontWeight: "200"}} className={ExploreNearbyStyles.destinationDistance}>{p.distance}</p>
                                 </div>
                             </NavLink>
                         ))

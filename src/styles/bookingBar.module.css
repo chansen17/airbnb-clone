@@ -11,9 +11,10 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 99;
-    background: #FFF;
+    background: #fff;
     border-radius: 20px;
     padding: .75rem;
+    filter: drop-shadow(1px 3px 7px rgba(80, 80, 80, 0.575));
 }
 
 .inputStyles {

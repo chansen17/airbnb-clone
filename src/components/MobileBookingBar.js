@@ -1,8 +1,9 @@
 import React from 'react'
+import mobileStyles from '../styles/mobileBookingBar.module.css';
 
 const MobileBookingBar = () => {
     return (
-        <input placeholder="Where are you going?" />
+        <input className={mobileStyles.mobileBookingBar} placeholder="Where are you going?" />
     )
 }
 

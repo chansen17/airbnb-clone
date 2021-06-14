@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-
+import { useWindowWidth } from '@react-hook/window-size';
 import HomeStyles from '../styles/homePage.module.css';
 // images
 import Year from '../images/airbnb-year.svg';
@@ -14,13 +14,15 @@ import BookingBar from '../components/BookingBar';
 import MobileBookingBar from '../components/MobileBookingBar';
 
 const Homepage = () => {
-    const [isMobile, setIsMobile] = useState(false);
-    const [width] = useState(window.innerWidth);
+    const [isMobile, setIsMobile] = useState(null);
+    const width = useWindowWidth();
 
     useEffect(() => {
-        const width = window.innerWidth;
-        if(width > 700) {
-            setIsMobile(false);
+
+        if(width > 1080) {
+           setIsMobile(false)
+        } else {
+            setIsMobile(true);
         }
     } ,[width])
     
@@ -33,10 +35,12 @@ const Homepage = () => {
         <div className={HomeStyles.homeLayout}>
             {isMobile ? <MobileBookingBar/> : <BookingBar />}
                 <section className={HomeStyles.heroSection}>
-                    <div className={HomeStyles.heroText}>
-                        <h4><img src={Year} alt="Airbnb 2021" /></h4>
-                        <h1>{homepageData.mainTitle}</h1>
-                        <button className={HomeStyles.learnButton}><a href="#exploreNearby">{homepageData.buttonText}</a></button>
+                    <div className={HomeStyles.inner}>
+                        <div className={HomeStyles.heroText}>
+                            <h4><img src={Year} alt="Airbnb 2021" /></h4>
+                            <h1>{homepageData.mainTitle}</h1>
+                            <button className={HomeStyles.learnButton}><a href="#exploreNearby">{homepageData.buttonText}</a></button>
+                        </div>
                     </div>
                 </section>
                 <div id="exploreNearby"/>
