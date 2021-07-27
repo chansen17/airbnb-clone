@@ -14,7 +14,7 @@ const Navbar = () => {
                 <NavLink className={NavStyles.navbarLink} to="/">Places to stay</NavLink>
                 <NavLink className={NavStyles.navbarLink} to="/experiences">Experiences</NavLink>
                 <NavLink className={NavStyles.navbarLink} to="/online-experiences">Online experiences</NavLink>
-            </div>
+            </div>a
             {/* secton 3 */}
             <div className={NavStyles.navbarItem}>
                 <NavLink className={NavStyles.navbarLink} to="/become-a-host">Become a host</NavLink>
